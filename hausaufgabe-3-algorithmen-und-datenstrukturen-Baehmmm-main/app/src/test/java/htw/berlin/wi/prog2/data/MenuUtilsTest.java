@@ -62,4 +62,12 @@ class MenuUtilsTest {
 
         assertEquals(expectedSorted, actualSorted);
     }
+
+    @Test
+    @DisplayName("should handle empty input map")
+    void focusOnNameAndInvertWithEmptyInput() {
+        Map<String, Long> actual = MenuUtils.focusOnNameAndInvert(Map.of());
+        Map<String, Long> expected = Map.of();
+        assertEquals(expected, actual);
+    }
 }

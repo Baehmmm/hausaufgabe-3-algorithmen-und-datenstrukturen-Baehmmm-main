@@ -3,6 +3,7 @@ package htw.berlin.wi.prog2.data;
 import htw.berlin.wi.prog2.domain.Ingredient;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
