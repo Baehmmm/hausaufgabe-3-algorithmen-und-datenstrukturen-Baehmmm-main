@@ -70,4 +70,14 @@ class MenuUtilsTest {
         Map<String, Long> expected = Map.of();
         assertEquals(expected, actual);
     }
+
+    @Test
+    @DisplayName("should return an empty list when input maps are empty")
+    void ingredientsFromIdAndCountWithEmptyInputs() {
+        Map<Long, Integer> emptyCounts = Map.of();
+        Map<Long, Ingredient> emptyMenu = Map.of();
+        List<Ingredient> expected = List.of();
+        List<Ingredient> actual = MenuUtils.ingredientsFromIdAndCount(emptyCounts, emptyMenu);
+        assertEquals(expected, actual);
+    }
 }
